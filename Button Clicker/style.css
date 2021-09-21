@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: cursive;
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar{
+    background-color: rgb(153, 153, 153);
+    width: 900px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.word-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+}
+.definition-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px;
+}
+.sub-container1{
+    width: 500px;
+    height: 250px;
+    border-style: solid;
+    position: absolute;
+    top: 15%;
+    left: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.sub-container2{
+    width: 500px;
+    height: 250px;
+    border-style: solid;
+    position: absolute;
+    bottom: 25%;
+    left: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add-definition{
+    width: 250px;
+    height: 100px;
+    border-style: solid;
+    position: absolute;
+    top: 15%;
+    right: 28%;
+    padding: 15px;
+
+}
+.definition-title{
+    font-size: 40px;
+    padding: 5px;
+}
+.plural-ninja{
+    font-style: italic;
+    font-size: 15px;
+}
+.likeBtn{
+    color: black;
+    background-color: yellow;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    width: 80px;
+    height: 30px;
+    border:  2px solid black;
+    box-shadow: .5px .5px 1px .5px black;
+    text-align: center;
+}
+.addBtn{
+    color: black;
+    background-color: green;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    width: 200px;
+    height: 30px;
+    border:  2px solid black;
+    box-shadow: 2px 2px 2px 2px black;
+    text-align: center;
+}
+.notification-popup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.notification-popup .popup-text{
+    visibility: hidden;
+    width: 200px;
+    height: 150px;
+    color: black;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: black;
+    padding: 8px 0;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+.notification-popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
